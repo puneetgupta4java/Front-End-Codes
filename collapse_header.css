@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu{
+    background:#161415;
+    opacity: 1;
+    width: 0%;
+   height: 520px;
+}
+.menu_item{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.4;
+    transition: opacity 300ms ease-in-out;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.menu_item a{
+    text-decoration: none;
+    color: #fff;
+}
+#menu_home{
+    padding-top: 140px;
+}
+#menu_about{
+    padding-top: 20px;
+}
+#menu_work{
+    padding-top: 20px;
+}
+#menu_contact{
+    padding-top: 20px;
+}
+#menu_academic{
+    padding-top: 20px;
+}
+.menu_item:hover{
+    opacity: 1;
+}
+
+#page_top{
+    width: 100%;
+    height: 580px;
+    top: 0px;
+    background:#161415;
+    color: #fff;
+    position: fixed;
+    padding-top: 50px;
+    /*padding-left: 90%;*/
+    font-size: 23px;
+    overflow: hidden;
+    transition: height 0.7s linear 0s, padding 0.7s linear 0s; 
+}
+
+#page_top > #banner{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 510px;
+    background: #004;
+    transition: height 0.7s linear 0s;
+} 
+
+#wrapper{
+    margin-top: 230px;
+}
+

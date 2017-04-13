@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bubbles</title>
+	<link rel="stylesheet" type="text/css" href="buttonRipple.css">
+    <script type="text/javascript">
+        var buttons = document.getElementsByTagName('button');
+        Array.prototype.forEach.call(buttons,function(b){
+            b.addEventListener('click',createRipple);
+        });
+        function createRipple(e){
+            var circle = document.createElement('div');
+            this.appendChild(circle);
+            circle.classList.add('ripple');
+        }
+    </script>
+</head>
+<body>
+    <button>
+        click me
+    </button>
+     <button>
+        click me
+    </button>
+     <button>
+        click me
+    </button>
+</body>
+</html>

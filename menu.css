@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#menu_bac{
+    background: #000;
+    background-size: cover;
+    width: 100%;
+    min-height: 650px;
+}
+.menu_item{
+    opacity: 0.5;
+    color: #fff;
+    transition: opacity 0.3s linear 0s;
+    cursor: pointer;
+    font-size: 30px;
+}
+#menu_home{
+  margin-top:-450px;  
+}
+.menu_item:hover{
+    opacity: 1;
+    background: #161415;
+}

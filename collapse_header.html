@@ -1,0 +1,53 @@
+<html>
+<head>
+ <title>project</title>
+    <link rel="stylesheet" href="collapse_header.css" type="text/css">
+    <script type="text/javascript">
+         var pagetop,banner,ypos,wrapper;
+        function yscroll(){
+             pagetop = document.getElementById('page_top');
+              banner = document.getElementById('banner');
+            wrapper = document.getElementById('wrapper');
+            ypos = window.pageYOffset;
+            if(ypos>510){
+                pagetop.style.height="36px";
+                pagetop.style.paddingTop="8px";
+                banner.style.height = "0px";
+            }else{
+                pagetop.style.height="580px";
+                pagetop.style.paddingTop="50px";
+                banner.style.height = "510px";
+            }
+        }
+     
+        window.addEventListener("scroll", yscroll);
+    </script>
+</head>
+  <body>
+  
+      <div id="menu">
+          <div><p id="menu_home" class="menu_item"><a href="#goto">Home</a></p></div>
+          <div><p id="menu_about" class="menu_item"><a href="#goto">About US</a></p></div>
+          <div><p id="menu_academic" class="menu_item"><a href="#goto">Academics</a></p></div>
+          <div><p id="menu_work" class="menu_item"><a href="#goto">works</a></p></div>
+          <div><p id="menu_contact" class="menu_item"><a href="#goto">Contact</a></p></div>
+      </div>
+      <header>
+        <div id="page_top">
+            Header
+           <div id="banner">menu system</div>
+        </div>
+      </header>
+      <div id="wrapper">
+      <section>
+       <p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br><p>I m browser</p><br>
+      
+      </section>
+      <footer>
+      
+      
+      
+      </footer>
+      </div>      
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+ <head>
+    <title>list turn</title>
+     <style type="text/css">
+         body{
+             margin: 0px;
+             padding: 0px;
+             background: #161415;
+         }
+         .they{
+             margin-left: 35%;
+             margin-top: 10%;
+             border: 2px solid #fff;
+             width: 190px;
+             height: 120px;
+             overflow: hidden;
+         }
+         .you{
+             list-style: none;
+             color: #fff;
+             font-size: 30px;
+             line-height: 55px;
+             animation: change 6s infinite;
+         }
+         @keyframes change{
+
+                0%, 12%, 100% {
+                    transform: translateY(0);
+                }
+                17%, 29% {
+                    transform: translateY(-25%);
+                }
+                34%, 46% {
+                    transform: translateY(-50%);
+                }
+                51%, 63% {
+                    transform: translateY(-75%);
+                }
+                68%, 80% {
+                    transform: translateY(-50%);
+                }
+
+                85%, 97% {
+                    transform: translateY(-25%);
+                }
+         }
+         .flip{
+             margin-top: 10%;
+             margin-left: 30%;
+             height: 200px;
+             width: 200px;
+             border: 2px solid #fff;
+             overflow: hidden;
+             border-radius: 50%;
+         }
+         .list{
+             font-size: 30px;
+             color: #fff;
+         }
+         .list li{
+             width: 100%;
+             height: 200px;
+             border-radius: 100%;
+         }
+         .pri{
+             left: 0px;
+             top: 0px;
+             background: #d6d6d6;
+             color: #161415;
+         }
+         .list:hover{
+             animation: fli 2s forwards;
+         }
+         @keyframes fli{
+             0%{
+                 transform: translateY(0);
+             }
+             100%{
+                 transform: translateY(-40%);
+             }
+         }
+     </style>
+ </head>
+    <body>
+        <div class="they">
+            <ul class="you">
+               <li>User!</li><br>
+                <li>Developer!</li><br>
+                <li>Creator!</li><br>
+                <li>Learner!</li><br>
+            </ul>
+        </div>
+        <div class="flip">
+            <ul class="list">
+                <li class="pri">facebook</li>
+                <li class="col">colored</li>
+            </ul>
+        </div>
+    </body>
+</html>
