@@ -1,0 +1,36 @@
+<html>
+<head>
+ <title>css_trans1</title>    
+   <link rel="stylesheet" href="css_transition1.css" type="text/css"/>
+   <!-- <script type="text/javascript">
+        function toggleClass(element, className){
+    if (!element || !className){
+        return;
+    }
+    
+    var classString = element.className, nameIndex = classString.indexOf(className);
+    if (nameIndex == -1) {
+        classString += ' ' + className;
+    }
+    else {
+        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+    }
+    element.className = classString;
+   }
+
+   document.getElementById('trig').addEventListener('click', function() {
+    toggleClass(document.getElementById('trig'), 'clicked');
+   });
+    </script> -->
+    <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+  <!--<script>
+       $(.trigger).on('click',function(){
+          $(this).toggleClass('clicked'); 
+       });
+    </script>-->
+ 
+</head>
+    <div class="trigger" id="trig">
+    <div class="box"></div>
+    </div>    
+</html>

@@ -1,0 +1,34 @@
+body{
+    padding: 50px;
+}
+.box{
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: myframes 2s ease-in-out 0s 1 forwards;
+}
+
+@keyframes myframes{
+    from{
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+    to{
+        height:200px;
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+.box2{
+    display: inline-block;
+    background: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: myframes 2s ease-in-out 0s 1 forwards;
+    border-radius: 100%;
+}

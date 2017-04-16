@@ -1,0 +1,29 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#notification{
+	margin-top: 100px;
+	margin-left: 600px;
+	width: 50px;
+	height: 220px;
+	background: #000;
+	opacity: 0.7;
+	transition: all 300ms cubic-beizer(0,0.71,0.45,2.15);
+}
+#notification:hover{
+	animation: mine 1s ease-in-out 0s forwards;
+	transform-origin: bottom;
+	pointer-events: none;
+}
+@keyframes mine{
+	0%{
+		transform: rotate(0deg) scale(1);
+	}
+	50%{
+		transform: rotate(-45deg); scale(1.5);
+	}
+	100%{
+		transform: rotate(-90deg) scale(2);
+	}
+}
