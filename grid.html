@@ -1,0 +1,156 @@
+<html>
+ <head><title>photo grid</title>
+   <!--<link href="grid.css" type="text/css"/>-->
+     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <style type="text/css">
+      body{
+    margin: 0px;
+    padding: 0px;
+    background: #e3e3e3;
+    }
+    .header{
+       
+    }
+    
+    .web{
+        margin: 50px auto;
+        background: #e3e3e3;
+        box-shadow: 0px 25px 30px -20px rgba(0,0,0,0.2);
+        box-sizing: border-box;
+    }
+     .grid{
+         padding: 10px;
+         perspective: 1000px;
+     }
+     .grid .item{
+         background: #ccc;
+         height: 260px;
+         margin-bottom: 10px;
+         display: inline-block;
+         border-radius: 4px;
+         padding: 20px;
+         box-sizing: border-box;
+         color: white;
+         background-position: center;
+         background-size: cover;
+     }
+     .grid .item:nth-child(1){
+         background-image: url(1.PNG);
+     }
+      .grid .item:nth-child(2){
+         background-image: url(bg.jpg);
+     }
+      .grid .item:nth-child(3){
+         background-image: url(Capture.PNG);
+     }
+     .grid .item:nth-child(4){
+         background-image: url(Desert.jpg);
+     }
+      .grid .item:nth-child(5){
+         background-image: url( img10.jpg);
+     }
+      .grid .item:nth-child(6){
+         background-image: url( img11.jpg);
+     }
+      .grid .item:nth-child(7){
+         background-image: url( img12.jpg);
+     }
+      .grid .item:nth-child(8){
+         background-image: url( img18.jpg);
+     }
+      .grid .item:nth-child(9){
+         background-image: url( img7.jpg);
+     }
+      .grid .item:nth-child(10){
+         background-image: url( img8.jpg);
+     }
+      .grid .item:nth-child(11){
+         background-image: url( img9.jpg);
+     }
+      .grid .item:nth-child(12){
+         background-image: url( Lighthouse.jpg);
+     }
+      .grid .item:nth-child(13){
+         background-image: url( tokyo.jpg);
+     }
+      .grid .item:nth-child(14){
+         background-image: url( US-wp1.jpg);
+     }
+      .grid .item:nth-child(15){
+         background-image: url( US-wp2.jpg);
+     }
+      .grid .item:nth-child(16){
+         background-image: url( US-wp3.jpg);
+     }
+      .grid .item:nth-child(17){
+         background-image: url( US-wp5.jpg);
+     }
+      .grid .item:nth-child(18){
+         background-image: url( US-wp4.jpg);
+     }
+      .grid .item:nth-child(19){
+         background-image: url( US-wp6.jpg);
+     }
+      .grid .item:nth-child(n){
+         height: 200px;
+     }
+     .item{
+         opacity: 0;
+     }
+     .visible{
+        animation: items 600ms ease-in forwards;
+     }
+     @keyframes items{
+         0%{
+             height: 0%;
+             opacity: 0;
+         }
+         100%{
+             opacity: 1;
+         }
+     }
+ </style>
+     <script src="jquery-3.1.1.min.js" type="text/javascript" ></script>
+     <script>
+         $(document).ready(function(){
+                 $('.item').each(function(i){
+                     setTimeout(function(){
+                        $('.item').eq(i).addClass('visible'); 
+                    },200 * i);  
+                });  
+        });
+      
+     </script>
+ </head>
+    <body>
+        <div class="container">
+            <div class="row">
+        <div class="web">
+               <div class="grid">
+                       <div class="row">
+                      <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                    
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                    
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       <div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                       </div>
+                   </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
