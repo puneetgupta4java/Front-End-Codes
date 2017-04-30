@@ -1,0 +1,38 @@
+<html>
+ <head>
+ <title>try juery</title>  
+     <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+     <script>
+        $(document).ready(function(){
+          $('.par').click(function(){
+             $('.child').fadeIn(500); 
+          }).mouseout(function(){
+              $('.child').fadeOut();
+          });
+        });
+     </script>
+     <style type="text/css">
+         .par{
+             height: 200px;
+             width: 200px;
+             background: #000;
+             cursor: pointer;
+         }
+         .child{
+             height: 100%;
+             width: 100%;
+             background: red;
+            display: none;
+         }
+         disp{
+             display: block;
+         }
+     </style>
+    
+</head>
+    <body>
+        <div class="par">
+            <div class="child"></div>
+        </div>
+    </body>
+</html>

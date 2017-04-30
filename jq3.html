@@ -1,0 +1,47 @@
+<html>
+ <head>
+ <title>try juery</title>  
+     <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+     
+</head>
+    <body>
+        <form>
+            male<input type="radio" name="gender" value="male"/>
+            female<input type="radio" name="gender" value="female"/><br><br>
+            js<input type="checkbox" name="lang" value="js"/>
+            c<input type="checkbox" name="lang" value="c"/>
+            java<input type="checkbox" name="lang" value="java"/><br><br>
+        <button type="submit" id="bnsubmit">submit</button>
+        </form>    
+        <div id="resultdisp"></div>
+        <div id="result2disp"></div>
+        <script>
+        $(document).ready(function(){
+            $('#bnsubmit').click(function(){
+            var result = $('input[type="radio"]:checked');  
+            if(result.length>0){
+               $('#resultdisp').html(result.val()+" is checked");
+               // $('#resultdisp').html(document.write(result.val()));
+            }
+            else{
+                $('#resultdisp').html("no radio button is checked");
+            }
+                
+                var result1 = $('input[type="checkbox"]:checked');
+                if(result1.length>0){
+                    var resultstring = result1.length + " checkboxes checked <br>";
+                    result1.each(function(){
+                       resultstring += $(this).val() +"<br>"; 
+                    });
+                    $('#result2disp').html(resultstring);
+                    //document.write(resultstring);
+                }
+                else{
+                    $('#result2disp').html("no checkbox selected");
+                }
+           });
+   
+        }); 
+     </script>
+    </body>
+</html>
